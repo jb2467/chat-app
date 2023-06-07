@@ -1,3 +1,53 @@
 .ok{
+    background-color: #a799b7;
+    color: #fdf4dc;
+}
+.topnav {
     background-color: #533a71;
+}
+
+/*
+    background-color: #533a71;
+    color: #fdf4dc;
+
+*/
+input[type=text] {
+    background-color: #533a71;
+    color: #fdf4dc;
+    border-radius: 20px;
+    border: #a799b7;
+}
+input[type=password] {
+    background-color: #533a71;
+    color: #fdf4dc;
+    border-radius: 20px;
+    border: #a799b7;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.topnav a {
+  float: left;
+  padding: 16px 16px;
+  text-decoration: none;
+  background-color: #533a71;
+  color: #fdf4dc;
+  border-radius: 1000px;
+}
+.topnav a:hover {
+  color: black;
+  text-decoration: none;
+}
+.btns-right {
+  float: right;
 }

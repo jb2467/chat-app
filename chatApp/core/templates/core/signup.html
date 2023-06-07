@@ -1,0 +1,34 @@
+{% extends 'core/core.html'%}
+
+{%block title %} Sign up | {%endblock%}
+{%block content %}
+    <h1 class="title">Sign up</h1>
+<form method="post" action="." class="forms">
+    {% csrf_token %}
+
+    <div class="username">
+        <label class="usernmae">Username</label></br>
+
+        <input type="text" name="username" class="username">
+    </div>
+
+    <div class="password">
+        <label class="text-white">Password</label></br>
+        <input type="password" name="password1" class="password">
+    </div>
+
+    <div class="password">
+        <label class="password">Repeat password</label></br>
+        <input type="password" name="password2" class="password">
+    </div>
+    {% if form.errors %}
+        {% for field in form %}
+            {% for error in field.errors %} 
+                    <p>{{ error|escape }}</p>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+
+    <button class="">Submit</button>
+{%endblock%}

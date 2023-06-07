@@ -3,18 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-widthh, initial-scale=1">
-        <title>CHAT APP!!!</title>
+        <title> {% block title%}{%endblock%}CHAT APP!!!</title>
         {% load static %}
         <link rel="stylesheet" href="{% static 'core.css' %}"/>
     </head>
     <body class="ok">
-        W app imo 
-        go into chat-app
-        then 
-        source chatApp_env/bin/activate
-        then 
-        cd chatApp
-        then
-        python3 manage.py runserver
+        <nav class="topnav">
+            <a href="/frontpage/">Home</a>
+            <div class="btns-right">
+                <a href="/login/">Login</a>
+                <a href="/signup/">Sign up</a>
+            </div>
+        </nav>
+    {% block content %}
+    {%endblock%}
     </body>
 </html>
