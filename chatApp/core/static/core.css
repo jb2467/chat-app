@@ -58,3 +58,24 @@ input[type=password] {
   border-radius: 1000px;
 }
 
+
+.room-box{
+    display: inline-block;
+    border-radius: 1000px;
+    background-color:#533a71;
+    height: 15vh;
+    width: 25vw;
+    text-align: center;
+}
+.room-selections a {
+    
+  padding: 16px 16px;
+  text-decoration: none;
+  background-color: #a799b7;
+  color: #fdf4dc;
+  border-radius: 1000px;
+}
+.room-selections a:hover {
+  color: black;
+  text-decoration: none;
+}

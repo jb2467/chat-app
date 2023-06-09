@@ -1,0 +1,18 @@
+{% extends 'core/core.html'%}
+
+{%block title %} Rooms | {%endblock%}
+{%block content %}
+<div class="title">
+    <h1>Rooms</h1>
+</div>
+<div>
+    {% for room in rooms%}
+        <div class="room-box">
+            <div class="room-selections">
+                <h3>{{room.name}}</h3>
+                <a href="###">Join room </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{%endblock%}
