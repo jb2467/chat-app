@@ -10,7 +10,7 @@
         <div class="room-box">
             <div class="room-selections">
                 <h3>{{room.name}}</h3>
-                <a href="###">Join room </a>
+                <a href="{% url 'room' room.slug %}">Join room </a>
             </div>
         </div>
     {% endfor %}

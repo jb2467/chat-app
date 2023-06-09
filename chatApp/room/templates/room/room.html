@@ -1,0 +1,23 @@
+{% extends 'core/core.html'%}
+
+{%block title %} {{room.name}} | {%endblock%}
+{%block content %}
+<div>
+    <h1 class="title">{{room.name}}</h1>
+</div>
+<div class="test">
+    <div class="chat-box">
+        <div class="chat-messages">
+            <p>Username</p>
+            <p>Message</p>
+        </div>
+    </div>
+</div>
+<div>
+    <form method="post" action="." class="forms">
+        <input type="text" name="content" class="msg" placeholder="🦦.", id="chat-message-input">
+        <button class="submit", id="chat-message submit"> Send
+        </button>
+    </form>
+</div>
+{%endblock%}
