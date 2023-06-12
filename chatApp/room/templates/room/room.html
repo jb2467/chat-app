@@ -25,7 +25,7 @@
 {% block js_block %}
     {{ room.slug|json_script:"json-roomname" }}
     {{ request.user.username|json_script:"json-username" }}
-    <div id='roomz'>{{room.slug|json_script:"json-roomname"}}</div>
+    <div id='room-name'>{{room.slug|json_script:"json-roomname"}}</div>
 
     {% load static %}
         <script type="text/javascript" src="{% static 'javascript/main.js' %}"> </script>

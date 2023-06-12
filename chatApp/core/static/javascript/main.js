@@ -1,4 +1,4 @@
-const roomName = document.getElementById('roomz').textContent.replace(/['"]+/g, '');
+const roomName = document.getElementById('room-name').textContent.replace(/['"]+/g, '');
 const chatSocket = new WebSocket(
     'ws://'
     + window.location.host
