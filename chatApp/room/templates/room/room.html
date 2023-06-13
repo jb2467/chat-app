@@ -7,7 +7,7 @@
 </div>
 <div class="test">
     <div class="chat-box">
-        <div class="chat-messages">
+        <div class="chat-messages" id="chat-messages">
             <p>Username</p>
             <p>Message</p>
         </div>
@@ -15,8 +15,8 @@
 </div>
 <div>
     <form method="post" action="." class="forms">
-        <input type="text" name="content" class="msg" placeholder="🦦.", id="chat-message-input">
-        <button class="submit", id="chat-message submit"> Send
+        <input type="text" name="content" class="#msg" placeholder="🦦.", id="chat-message-input">
+        <button class="submit", id="chat-message-submit"> Send
         </button>
     </form>
 </div>
@@ -26,7 +26,7 @@
     {{ room.slug|json_script:"json-roomname" }}
     {{ request.user.username|json_script:"json-username" }}
     <div id='room-name'>{{room.slug|json_script:"json-roomname"}}</div>
-
+    <div id='user-name'> {{ request.user.username|json_script:"json-username" }}</div>
     {% load static %}
         <script type="text/javascript" src="{% static 'javascript/main.js' %}"> </script>
 {%endblock%}
