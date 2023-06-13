@@ -15,7 +15,7 @@ chatSocket.onmessage = function(e) {
             html+= '<div class="chat-messages">'
             html += '<p>' + data.username + '</p>'
             html += '<p>' +data.message + '</p></div></div>'
-        document.querySelector('#chat-messages').innerHTML += html
+            document.querySelector('#z').innerHTML += html
     }else{
         alert('empty')
     }
@@ -27,12 +27,7 @@ chatSocket.onclose = function(e) {
 document.querySelector('#chat-message-submit').onclick = function(e){
     e.preventDefault();
     let messageInputDom = document.querySelector('#chat-message-input')
-    let message = messageInputDom.value;
-    console.log({
-        'message': message,
-        'username': userName,
-        'room': roomName
-    })
+    let message = messageInputDom.value;    
     chatSocket.send(JSON.stringify({
         'message': message,
         'username': userName,
