@@ -15,7 +15,7 @@ chatSocket.onmessage = function(e) {
             html+= '<div class="chat-messages">'
             html += '<p>' + data.username + '</p>'
             html += '<p>' +data.message + '</p></div></div>'
-            document.querySelector('#z').innerHTML += html
+            document.querySelector('#chat-holder').innerHTML += html
     }else{
         alert('empty')
     }
@@ -36,3 +36,4 @@ document.querySelector('#chat-message-submit').onclick = function(e){
     messageInputDom ='';
     return false;
 }
+document.querySelector('#chat-holder').scrollTop = document.querySelector('#chat-holder').scrollHeight;
