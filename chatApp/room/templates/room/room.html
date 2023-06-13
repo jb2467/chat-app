@@ -5,11 +5,24 @@
 <div>
     <h1 class="title">{{room.name}}</h1>
 </div>
-<div class="test" id="z">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="chat-holder" id="chat-holder">
+    {% for m in messages %}
+    <div class="chat-box">
+        <div class="chat-messages">
+            <p>  {{m.user.username}} </p>
+            <p> {{m.content}} </p></div></div>
+    {%endfor%}
 </div>
+<br></br>
 <div>
-    <form method="post" action="." class="forms">
-        <input type="text" name="content" class="#msg" placeholder="🦦.", id="chat-message-input">
+    <form method="post" action="." class="send-btn">
+        <input type="text" name="content" class="#msg" placeholder="🦦", id="chat-message-input">
         <button class="submit", id="chat-message-submit"> Send
         </button>
     </form>
