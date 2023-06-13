@@ -13,5 +13,4 @@ def rooms(request):
 def room(request, slug):
     room = Room.objects.get(slug=slug)
     messages = Message.objects.filter(room=room)
-    print( 'messgaes' , (messages))
     return render(request, 'room/room.html', {'room': room, 'messages': messages})
