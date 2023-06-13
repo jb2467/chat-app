@@ -34,6 +34,7 @@ document.querySelector('#chat-message-submit').onclick = function(e){
         'room': roomName
     }));
     messageInputDom ='';
+    document.querySelector('#chat-holder').scrollTop = document.querySelector('#chat-holder').scrollHeight;
     return false;
 }
 document.querySelector('#chat-holder').scrollTop = document.querySelector('#chat-holder').scrollHeight;
