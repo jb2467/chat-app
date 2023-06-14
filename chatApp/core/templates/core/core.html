@@ -7,8 +7,9 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/core.css' %}"/>
     </head>
+    <button class= "menu" id="menu">Menu</button>
     <body class="ok">
-        <nav class="topnav">
+        <nav class="topnav" id="navMenu">
             <a href="/">Home</a>
             <div class="btns-right">
             {% if request.user.is_authenticated %}
@@ -25,6 +26,8 @@
     {% block content %}
     {%endblock%}
     {% block js_block %}
+        {% load static %}
+            <script type="text/javascript" src="{% static 'javascript/moblie.js' %}"> </script>
     {%endblock%}
     </body>
 </html>
