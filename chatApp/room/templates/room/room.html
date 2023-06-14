@@ -5,12 +5,6 @@
 <div>
     <h1 class="title">{{room.name}}</h1>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <div class="chat-holder" id="chat-holder">
     {% for m in messages %}
     <div class="chat-box">
@@ -22,7 +16,7 @@
 <br></br>
 <div>
     <form method="post" action="." class="send-btn">
-        <input type="text" name="content" class="#msg" placeholder="🦦", id="chat-message-input">
+        <input type="text" name="content" class="msg" placeholder="🦦", id="chat-message-input">
         <button class="submit", id="chat-message-submit"> Send
         </button>
     </form>
@@ -36,4 +30,5 @@
     <div id='user-name'> {{ request.user.username|json_script:"json-username" }}</div>
     {% load static %}
         <script type="text/javascript" src="{% static 'javascript/main.js' %}"> </script>
+        <script type="text/javascript" src="{% static 'javascript/moblie.js' %}"> </script>
 {%endblock%}
