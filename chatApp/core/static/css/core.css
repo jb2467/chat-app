@@ -128,18 +128,18 @@ input[type=password] {
 
 @media only screen and (max-width: 1000px){
 .topnav{
-    display: none;
-    background-color: transparent;
+  display: none;
+  background-color: transparent;
 }
 .menu{
-    display: block;
-    background-color: #a799b7;
-    height: 50px;
-    width: 100px;
-    color: #533a71;
+  display: block;
+  background-color: #a799b7;
+  height: 50px;
+  width: 100px;
+  color: #533a71;
 }
 .menu:hover{
-    color: #fdf4dc;
+  color: #fdf4dc;
 }
 .submit{
   width: 25vw;
