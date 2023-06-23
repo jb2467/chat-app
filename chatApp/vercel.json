@@ -1,4 +1,5 @@
 {
+    
     "builds": [{
         "src": "chatApp/wsgi.py",
         "use": "@vercel/python",
@@ -9,5 +10,6 @@
             "src": "/(.*)",
             "dest": "chatApp/wsgi.py"
         }
-    ]
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/frontpage.html" }]
 }
