@@ -75,6 +75,9 @@ input[type=password] {
   text-decoration: none;
 }
 .chat-holder{
+  background: no-repeat;
+  background-position: 50%;
+  background-image: url(../images/background.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,12 +87,13 @@ input[type=password] {
 }
 .chat-box{
   border-radius: 100px;
-  background-color:#533a71;
   height: 100px;
-  width: 90vw;
+  width: 50vw;
   align-items: center;
   justify-content: center;
   justify-items: center;
+  overflow-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .chat-messages{
